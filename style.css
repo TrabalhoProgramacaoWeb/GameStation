@@ -7,9 +7,16 @@ body {
 .titulo {
     font-family: Arial, sans-serif;
     padding: 20px;
+    padding-left: 40px;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: auto;
     border: 1px;
     border-radius: 4px;
+
     background-color: white;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.40);
+    user-select: none;
 }
 
 .pesquisa {
@@ -24,10 +31,11 @@ body {
     margin: auto;       /* Centraliza a própria div na tela */
     width: fit-content;      /* Faz a largura se ajustar ao conteúdo */
     border-radius: 7px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.40);
 }
 
 .pesquisa input:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.35);
 }
 
 .pesquisa input {
@@ -67,11 +75,12 @@ body {
     z-index: 1; /* Garante que fique acima de outros elementos */
     background-color: white;
     position: relative;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.35);
 }
 
 .jogo:hover {
-    transform: scale(1.06);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    transform: scale(1.02);
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.40);
     z-index: 10; /* Sobe o elemento para frente dos outros */
 }
 
@@ -87,12 +96,19 @@ body {
     font-size: large;
 }
 
-.copyright {  
+.center {
+    text-align: center;
+}
+
+.copyright {
     font-family: Arial, sans-serif;
     font-size: 12px;
-    padding: 1px;
+    padding: 4px 8px;
     border: 1px;
     border-radius: 4px;
+
     background-color: white;
     margin-bottom: 8px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.40);
+    display: inline-block;
 }
