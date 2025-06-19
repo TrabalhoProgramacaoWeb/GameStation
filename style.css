@@ -7,19 +7,45 @@ body {
 .titulo {
     font-family: Arial, sans-serif;
     padding: 20px;
-    margin: 20px;
     border: 1px;
-    border-radius: 7px;
+    border-radius: 4px;
     background-color: white;
-    display: inline-block;
 }
 
 .pesquisa {
-    font-family: Arial, sans-serif;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    background-color: white;
+
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (dentro da div) */
+
+    padding: 7px;
+    margin: auto;       /* Centraliza a própria div na tela */
+    width: fit-content;      /* Faz a largura se ajustar ao conteúdo */
+    border-radius: 7px;
+}
+
+.pesquisa input:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.pesquisa input {
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #aaa;
+    width: 300px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.icone_lupa {
+    position: absolute;
+    right: 13px;
+    height: 25px;
+    pointer-events: none;
+    opacity: 80%;
 }
 
 .jogos {
@@ -44,8 +70,8 @@ body {
 }
 
 .jogo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
     z-index: 10; /* Sobe o elemento para frente dos outros */
 }
 
@@ -59,4 +85,14 @@ body {
 .jogo .info {
     max-width: 600px;
     font-size: large;
+}
+
+.copyright {  
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 1px;
+    border: 1px;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 8px;
 }
