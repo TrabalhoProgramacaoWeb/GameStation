@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logo sobre a barra</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .barra {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 25px 0;
+      position: relative;
+    }
+
+    .item {
+      color: white;
+      padding: 15px 30px;
+      background-color: #555;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .item:hover {
+      background-color: #777;
+    }
+
+    .logotipo img {
+      height: 80px;
+      cursor: pointer;
+      transition: filter 0.3s ease;
+      display: block;
+      margin-left: 30px;
+    }
+
+    .logotipo img:hover {
+      filter: saturate(200%);
+    }
+
+    .espaço {
+        flex-grow: 1;
+    }
+
+    .itens {
+        display: flex;
+        gap: 40px;
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="barra">
+    <div class="logotipo">
+      <img src="imagens/Controle.png" alt="Logo"/>
+    </div>
+    <div class="espaço">
+    </div>
+    <div class="itens">
+    <div class="item">Empresas</div>
+    <div class="item">Jogos</div>
+    <div class="item">Contato</div>
+    </div>
+    <div class="espaço"></div>
+  </div>
+
+</body>
+</html>
