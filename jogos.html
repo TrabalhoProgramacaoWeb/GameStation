@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game Station</title>
+    <link rel="stylesheet" href="jogos.css" />
+  </head>
+  <body bgcolor="gray">
+    <h1 class="titulo">Jogos:</h1>
+    <br />
+    <div class="pesquisa">
+      <input type="text" id="search" placeholder="Digite o nome do jogo..." />
+      <img src="imagens/pesquisa.png" class="icone_lupa" />
+    </div>
+    <div class="jogos">
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 1</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 2</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 3</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 4</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 5</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 6</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 7</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 8</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 9</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+      <div class="jogo">
+        <img src="imagens/generico.png" height="200" />
+        <div class="info">
+          <h3>JOGO 10</h3>
+          <p>i gotta reedem, i gotta relieve, i gotta believe!! :D</p>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="copyright">
+        ©2025 GameStation Ltda. Todos os direitos reservados.
+      </div>
+    </div>
+    <script>
+      const searchInput = document.getElementById("search");
+      const jogos = document.querySelectorAll(".jogo");
+
+      searchInput.addEventListener("input", () => {
+        const valor = searchInput.value.toLowerCase();
+
+        jogos.forEach((jogo) => {
+          const nome = jogo.querySelector("h3").textContent.toLowerCase();
+          if (nome.includes(valor)) {
+            jogo.style.display = "flex";
+          } else {
+            jogo.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
