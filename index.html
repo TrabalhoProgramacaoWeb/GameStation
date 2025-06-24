@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameStation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="logo">
+  <div class="barra-base">
+    <div class="barra">
+      <div class="logo">
+        <a href="#logo">
+        <img src="imagens/Controle.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="Caixa-Base">
+        <a href="#empresas" class="botao"><div class="Caixa-Texto">Empresas</div></a>
+        <a href="pag jogos/jogos.html" class="botao"><div class="Caixa-Texto">Jogos</div></a>
+        <div class="Caixa-Texto">Contatos</div>
+      </div>
+    </div>
+  </div>
+  <div class="Carrossel-Base-Jogos">
+    <button class="Seta-Esquerda" onclick="Rolar(-3)">❮</button>
+    <div class="Carrossel-Jogos" id="carrossel-jogos">
+      <div class="Jogo">
+        <img src="imagens/Jogos/God_of_War_Ragnarok.webp"/>
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/Spider-Man.jpg"/>
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/Shadow of the colossus.jpeg"/>
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/geteá.jpg"/>
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/carros vrum vrum.jpg"/>        
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/jogo de emo dark radical.jpg"/>
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/sonic.jpg" />
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/Mauro.jpg"/>
+      </div>
+      <div class="Jogo">
+        <img src="imagens/Jogos/Pokemão.jpg"/>
+      </div>
+    </div>
+    <button class="Seta-Direita" onclick="Rolar(3)">❯</button>
+  </div>
+  <div class="Barra-Categoria" id="empresas">
+    <h1>Empresas:</h1>
+  </div>
+  <div class="Categoria-Base">
+    <div class="Categoria">
+      <div class="Empresa">
+        <img src="imagens/Empresas/Rock Star.jpg"/>
+      </div>
+      <div class="Empresa">
+        <img src="imagens/Empresas/Nintendo.jpg"/>
+      </div>
+      <div class="Empresa">
+        <img src="imagens/Empresas/Sony.jpg"/>
+      </div>
+      <div class="Empresa">
+        <img src="imagens/Empresas/Rock Star.jpg"/>
+      </div>
+      <div class="Empresa">
+        <img src="imagens/Empresas/Rock Star.jpg"/>
+      </div>
+      <div class="Empresa">
+        <img src="imagens/Empresas/Rock Star.jpg"/>
+      </div>
+    </div>
+  </div>
+  <div>
+  <div class="barra-base-contato">
+    <div class="barra-contato"> </div>
+  </div>
+  </div>
+    <div class="center">
+      <div class="copyright">
+        ©2025 GameStation Ltda. Todos os direitos reservados.
+      </div>
+    </div>
+  <script>
+    function Rolar(direcao) {
+      const carrossel = document.getElementById('carrossel-jogos');
+      const larguraCard = 315;
+      carrossel.scrollLeft += direcao * larguraCard;
+    }
+  </script>
+</body>
+</html>

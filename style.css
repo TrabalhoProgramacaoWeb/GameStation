@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  user-select: none;
+}
+
+.barra-base {
+    background-color: #333;
+    width: 100%;
+
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 25px 0;
+  height: 45px;
+  border-radius: 7px;
+
+}
+
+.logo img {
+  height: 80px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  margin-left: 120px;
+}
+
+.logo img:hover {
+  filter: saturate(1500%);
+  transform: scale(1.1);
+}
+
+.Caixa-Base {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  margin-right: 255px;
+}
+
+.Caixa-Texto {
+  color: white;
+  padding: 15px 30px;
+  background-color: #555;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.Caixa-Texto:hover {
+  background-color: #777;
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.Carrossel-Base-Jogos {
+  position: relative;
+  display: block;
+  align-items: center;
+  padding: 12px;
+  background-color: #222;
+  overflow: hidden;
+}
+
+.Carrossel-Jogos {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 10px;
+}
+
+.Jogo img,
+.Jogo {
+  width: 300px;
+  height: 400px;
+  background-color: #444;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.Jogo:hover {
+  transform: scale(1.05);
+}
+
+.Seta-Esquerda,
+.Seta-Direita {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: solid, white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  margin-top: -55px;
+}
+
+.Seta-Esquerda:hover,
+.Seta-Direita:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.Seta-Esquerda {
+  left: 10px;
+}
+
+.Seta-Direita {
+  right: 10px;
+}
+
+.Barra-Categoria {
+  padding: 30px 40px 10px;
+  background-color: #333;
+  align-items: center;
+}
+
+.Barra-Categoria h1 {
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: -15px;
+  
+}
+
+.Categoria-Base {
+  padding: 20px 40px 40px;
+  background-color: #f5f5f5;
+}
+
+.Categoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Empresa img,
+.Empresa {
+  width: 180px;
+  height: 180px;
+  background-color: #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+.Empresa:hover {
+  transform: scale(1.05);
+  background-color: #ccc;
+}
+
+.center {
+    text-align: center;
+}
+
+.copyright {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 4px 8px;
+    border: 2px solid rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.40);
+    display: inline-block;
+}
